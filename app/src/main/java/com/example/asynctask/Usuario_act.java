@@ -28,7 +28,7 @@ public class Usuario_act extends AppCompatActivity {
         spin1 = (Spinner)findViewById(R.id.SpCliente);
         spin2 = (Spinner)findViewById(R.id.SpServicio);
 
-        text = (TextView)findViewById(R.id.EtMonto);
+        text = (TextView)findViewById(R.id.TvResultado);
         calcular = (Button)findViewById(R.id.BtnCalcular);
         edit = (EditText)findViewById(R.id.EtMonto);
 

@@ -64,7 +64,7 @@ public class Slider_act extends AppCompatActivity {
         Cliente.add("Shona");
         Cliente.add("DarkSnow");
         Cliente.add("MiNiMo");
-
+        Cliente.add("Nasho");
 
         ArrayList<String> Plan = new ArrayList<String>();
         Plan.add("Normal");
