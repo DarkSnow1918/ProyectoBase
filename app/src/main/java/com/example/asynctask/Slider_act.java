@@ -77,4 +77,10 @@ public class Slider_act extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void Insumos(View view)
+    {
+        Intent i = new Intent(this, Insumos_act.class);
+        startActivity(i);
+    }
+
 }
