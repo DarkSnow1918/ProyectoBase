@@ -31,7 +31,7 @@
             android:ems="10"
             android:hint="Ingrese nombre"
             android:inputType="textPersonName"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@android:color/background_light" />
 
         <EditText
             android:id="@+id/EtContra"
@@ -40,7 +40,7 @@
             android:ems="10"
             android:hint="Ingrese Contraseña"
             android:inputType="textPersonName"
-            android:textColorHint="@android:color/black" />
+            android:textColorHint="@android:color/background_light" />
     </LinearLayout>
 
     <Button

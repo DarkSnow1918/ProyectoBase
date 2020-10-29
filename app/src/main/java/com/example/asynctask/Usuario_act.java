@@ -64,15 +64,15 @@ public class Usuario_act extends AppCompatActivity {
 
 
 
-        if(cliente.equals("shona")&&planes.equals("Normal")){
+        if(cliente.equals("Shona")&&planes.equals("Normal")){
             text.setText("El valor de Normal es: "+resulNormal);
         }
 
-        if(cliente.equals("shona")&&planes.equals("Fitness")){
+        if(cliente.equals("Shona")&&planes.equals("Fitness")){
             text.setText("El valor de Normal es: "+resulFitness);
         }
 
-        if(cliente.equals("shona")&&planes.equals("Mamadisimo")){
+        if(cliente.equals("Shona")&&planes.equals("Mamadisimo")){
             text.setText("El valor de Normal es: "+resulMamadisimo);
         }
 
@@ -97,6 +97,18 @@ public class Usuario_act extends AppCompatActivity {
         }
 
         if(cliente.equals("MiNiMo")&&planes.equals("Mamadisimo")){
+            text.setText("El valor de Normal es: "+resulMamadisimo);
+        }
+
+        if(cliente.equals("Nasho")&&planes.equals("Normal")){
+            text.setText("El valor de Normal es: "+resulNormal);
+        }
+
+        if(cliente.equals("Nasho")&&planes.equals("Fitness")){
+            text.setText("El valor de Normal es: "+resulFitness);
+        }
+
+        if(cliente.equals("Nasho")&&planes.equals("Mamadisimo")){
             text.setText("El valor de Normal es: "+resulMamadisimo);
         }
     }
