@@ -13,14 +13,14 @@ import android.widget.Toast;
 import Clases.AdminSQLiteOpenHelper;
 
 public class Insumos_act extends AppCompatActivity {
-    private EditText code,name,precio,stock;
+    private EditText codee,name,precio,stock;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_insumos_act);
 
-        code = (EditText)findViewById(R.id.EtCode);
+        codee = (EditText)findViewById(R.id.EtCode);
         name = (EditText)findViewById(R.id.EtName);
         precio = (EditText)findViewById(R.id.EtPrecio);
         stock = (EditText)findViewById(R.id.EtStock);
@@ -31,12 +31,12 @@ public class Insumos_act extends AppCompatActivity {
         AdminSQLiteOpenHelper sql = new AdminSQLiteOpenHelper(this, "fichero",null,1);
         SQLiteDatabase db = sql.getWritableDatabase();//permito la sobreescritura en mi base de datos
 
-        if(!code.getText().toString().isEmpty())
+        if(!codee.getText().toString().isEmpty())
         {
             //Añade el insumo
             ContentValues registro = new ContentValues();
 
-            registro.put("codigo",code.getText().toString());
+            registro.put("codigo",codee.getText().toString());
             registro.put("nombre",name.getText().toString());
             registro.put("precio",precio.getText().toString());
             registro.put("stock",stock.getText().toString());
@@ -60,7 +60,7 @@ public class Insumos_act extends AppCompatActivity {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "fichero",null,1);
         SQLiteDatabase bd = admin.getWritableDatabase();
 
-        String codigo = code.getText().toString();
+        String codigo = codee.getText().toString();
         if(!codigo.isEmpty())
         {
             Cursor fila = bd.rawQuery("SELECT nombre, precio, stock FROM insumos WHERE codigo = " +codigo,null);
@@ -88,7 +88,7 @@ public class Insumos_act extends AppCompatActivity {
     {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "fichero",null,1);
         SQLiteDatabase bd = admin.getWritableDatabase();
-        String codigo = code.getText().toString();
+        String codigo = codee.getText().toString();
 
         if (!codigo.isEmpty())
         {
@@ -106,13 +106,13 @@ public class Insumos_act extends AppCompatActivity {
     {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "fichero",null,1);
         SQLiteDatabase bd = admin.getWritableDatabase();
-        String codigo = code.getText().toString();
+        String codigo = codee.getText().toString();
 
         ContentValues cont = new ContentValues();
-        cont.put("codigo",code.getText().toString());
-        cont.put("nombre",code.getText().toString());
-        cont.put("precio",code.getText().toString());
-        cont.put("stock",code.getText().toString());
+        cont.put("codigo",codee.getText().toString());
+        cont.put("nombre",codee.getText().toString());
+        cont.put("precio",codee.getText().toString());
+        cont.put("stock",codee.getText().toString());
 
         if (!codigo.isEmpty())
         {
